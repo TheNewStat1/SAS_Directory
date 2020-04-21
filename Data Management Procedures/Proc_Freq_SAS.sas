@@ -1,0 +1,6 @@
+
+/* Syntax for Base PROC FREQ */
+
+PROC FREQ DATA=TABLE ;
+	TABLE VAR1 VAR2 ;
+RUN;

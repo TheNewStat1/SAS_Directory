@@ -1,0 +1,12 @@
+
+
+PROC IMPORT DATAFILE="C:\Users\Pratik\Desktop\Data Science Learning\Example Datasets\Applied Regression Analysis\Class_Survey.csv"
+DBMS=CSV REPLACE OUT=CLASS_SURV;
+GETNAMES=YES;
+RUN;
+
+
+PROC REG DATA=WORK.CLASS_SURV ;
+TITLE "PREDICTION 95%CI AND MEAN PREDICTION 95%CI";
+MODEL BOOK_COST = SATV / CLI  CLM  ;
+RUN;

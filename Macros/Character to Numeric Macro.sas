@@ -1,6 +1,6 @@
 
 /* load iris dataset */
-proc import datafile="C:\Users\Pratik\Desktop\Data Science Learning\Example Datasets\iris.xlsx"
+proc import datafile="C:\~\iris.xlsx"
 dbms=xlsx replace out=work.iris ;
 getnames=yes;
 run;

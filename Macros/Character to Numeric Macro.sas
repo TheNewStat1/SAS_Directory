@@ -5,7 +5,7 @@ dbms=xlsx replace out=work.iris ;
 getnames=yes;
 run;
 
-/* hard code way */
+/* Convert the Numeric Variables to Character to use the Numberize Macro */
 data work.iris_test_Start ;
 set work.iris ;
 id_char = left(put(id, $8.)) ;
